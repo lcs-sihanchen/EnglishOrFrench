@@ -43,11 +43,11 @@ class ViewController: UIViewController {
         for scalars in inputTextAsString.unicodeScalars {
             let stringT = "tT"
             let stringS = "sS"
-            
-            if stringT.contains(inputTextAsString) {
+            let scalarsAsString = String(scalars)
+            if stringT.contains(scalarsAsString) {
                 numberOfTs += 1
             }
-            if stringS.contains(inputTextAsString) {
+            if stringS.contains(scalarsAsString) {
                 numberOfSs += 1
             }
             
