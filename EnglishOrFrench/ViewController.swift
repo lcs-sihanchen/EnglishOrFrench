@@ -57,7 +57,13 @@ class ViewController: UIViewController {
             
         }
         
-        
+        if numberOfSs > numberOfTs {
+            analyzeResult.text = "This looks like French."
+        } else if numberOfSs == numberOfTs {
+            analyzeResult.text = "This is probably French."
+        } else {
+            analyzeResult.text = "This looks like English."
+        }
         
         
         
